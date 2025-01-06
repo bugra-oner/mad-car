@@ -35,3 +35,23 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Hata: bu", error);
         });
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     fetch("header/header.html").then(response => {
+//         if (!response.ok) {
+//             throw new Error("Header yüklenemedi: " + response.statusText);
+//         }
+//         return response.text();
+//     }).then(data => {
+//         document.querySelector("header").innerHTML = data; // <header> etiketi doğru mu?
+//     })
+//         .catch(error => {
+//             console.log("Header Yüklenemedi.", error)
+//         })
+// })
+
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    const nav = document.querySelector(".header-nav");
+    nav.classList.toggle("active");
+});
+
