@@ -1,0 +1,85 @@
+/* Genel Footer Stilleri */
+footer {
+    background-color: #222;
+    /* Daha koyu bir ton */
+    color: #f1f1f1;
+    /* Daha açık bir yazı rengi */
+    padding: 30px 0;
+    /* Daha geniş bir üst-alt boşluk */
+    font-size: 15px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Daha geniş aralık */
+    max-width: 1400px;
+    /* Daha geniş bir sınır */
+    margin: 0 auto;
+    padding: 0 30px;
+    /* Yandan daha fazla boşluk */
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    /* Minimum genişliği artırıldı */
+    margin: 15px;
+    /* Bölümler arasında daha fazla boşluk */
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    /* Başlıklara farklı bir vurgu rengi */
+}
+
+.footer-section p {
+    line-height: 1.6;
+    /* Yazıların okunabilirliği artırıldı */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+    /* Link hover etkisi için vurgu rengi */
+}
+
+.social-media a {
+    color: #f1f1f1;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+    /* Sosyal medya linklerinde hover efekti */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    /* Üst çizgiyle ayrılmış */
+    padding-top: 15px;
+    font-size: 14px;
+    color: #888;
+    /* Daha az dikkat çeken bir yazı rengi */
+}

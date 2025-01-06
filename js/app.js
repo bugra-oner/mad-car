@@ -15,3 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
         servicesContainer.appendChild(serviceDiv);
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    //const link = document.createElement("link");
+    //link.rel = "stylesheet";
+    //link.href = "footer/footer.css"; // Footer'a ait CSS dosyasının yolu
+    //document.head.appendChild(link); // CSS dosyasını dinamik olarak <head> içine ekliyoru
+    fetch("footer/footer.html") // Dosya yolu doğru mu?
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Footer yüklenemedi: " + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.querySelector("footer").innerHTML = data; // <footer> etiketi doğru mu?
+        })
+        .catch(error => {
+            console.error("Hata: bu", error);
+        });
+});
